@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 240, 0.5);
+}
+
+header {
+    /*background-image: url('img/Digitalizacion-sanidad.jpg'); /* Ruta de tu imagen inicial
+    background-size: cover;
+    background-position: center; */
+    height: 40px; /* Ajusta la altura de la imagen inicial según tus necesidades */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(105, 28, 50);
+}
+
+header a {
+    text-decoration: none;
+    color: #DDC9A3;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.patient-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; /* Cambia el cursor a un puntero */
+    transition: background-color 0.3s; /* Agrega transición al cambio de color */
+}
+
+.patient-item:hover {
+    background-color: lightgray; /* Cambia el color al pasar el mouse */
+}
+
+footer {
+    background-color: #691C32;
+    color: rgb(152,152,153,0.7);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+#search {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#patient-list {
+    list-style: none;
+    padding: 0;
+    background-color: white; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde alrededor de la lista */
+    border-radius: 5px; /* Esquinas redondeadas */
+    margin: 10px;
+}
+
+#patient-list li {
+    margin: 0; /* Elimina el margen entre elementos */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Borde inferior para separar pacientes */
+}
+
+#patient-list li:last-child {
+    border-bottom: none; /* Elimina el borde inferior del último paciente */
+}
+
+/* Agrega un borde alrededor del contenedor de la tabla */
+#patient-list-container {
+    border: 1px solid #ddd; /* Color y grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 10px; /* Espacio alrededor de la tabla */
+}
+
+.modal-header {
+    color: aliceblue;
+    background-color: rgb(70, 130, 180); /* Cambia esto al color que desees */
+    /* Otros estilos opcionales, como color de texto, espaciado, etc. */
+     /* Cambia el color del texto si es necesario */
+    padding: 10px; /* Añade espaciado alrededor del contenido del encabezado */
+  }
+
+  /*SCROLL BUSCADOR*/
+  #patient-list-container {
+    background-color: rgba(211, 211, 211, 0.5);
+    max-height: 800px; /* Altura máxima del div */
+    overflow-y: auto; /* Agrega scroll vertical si el contenido excede la altura máxima */
+    padding: 10px; /* Espaciado opcional */
+  }
+  
+  
+
+/*TABLA
+*/
+
+
+ /* Estilo para el encabezado de la tabla */
+ .tabla-consulta th {
+    background-color:rgb(70, 130, 180);
+    color: aliceblue;
+    text-align: left;
+    padding: 10px;
+}
+
+
+/* Estilo para las celdas con la clase "estilo-celda" */
+.tabla-consulta td.estilo-celda {
+    font-weight: bold;
+    color: black; /* Cambia el color del texto de las celdas con esta clase */
+}
+
+
+
+
